@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plot
+from matplotlib import pyplot as plot
 
 def plotPoints(dino_vectors, scale_x, scale_y):
     dino_length = len(dino_vectors)
