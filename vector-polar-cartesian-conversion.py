@@ -1,5 +1,5 @@
 from coordinates import to_polar
-from coordinates import to_cartesian
+from coordinates import to_cartesian_in_radian
 
 vector_points = (-2, 3)
 
@@ -10,7 +10,7 @@ polar_vector = to_polar(vector_points)
 print("[Cartesian to Polar] (angle = "+str(polar_vector[0]) +
       ", vector length = "+str(polar_vector[1])+")")
 
-cartesian_vector = to_cartesian(polar_vector)
+cartesian_vector = to_cartesian_in_radian(polar_vector)
 
 print("[Polar to Cartesian] (x, y) = (" +
       str(cartesian_vector[0])+", "+str(cartesian_vector[1])+")")

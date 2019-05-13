@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plot
 from coordinates import to_polar
-from coordinates import to_cartesian
+from coordinates import to_cartesian_in_radian
 from math import pi
 
 
@@ -38,7 +38,7 @@ rotation_angle = pi/4
 for i in range(len(dino_vectors)):
     dino_polar = to_polar(dino_vectors[i])
     dino_rotated_polar = (dino_polar[0] + rotation_angle, dino_polar[1])
-    dino_vectors[i] = to_cartesian(dino_rotated_polar)
+    dino_vectors[i] = to_cartesian_in_radian(dino_rotated_polar)
 
 plotPoints(dino_vectors, 0, 0)
 for i in 10, 20, 30, 40, 50:
